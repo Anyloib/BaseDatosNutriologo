@@ -22,6 +22,12 @@
                         @foreach($pacientes as $paciente)
                             <tr>
                                 <td>{{$paciente->nombre."".$pacientes->apellidos}}<td>
+                                <td>{{$paciente->nacimiento}}</td>
+
+                                <td>
+                                    <button clas="btn btn-primary"><i class="fa fa-edit"></button>
+                                    <button clas="btn btn-danger"><i class="fa fa-time"></button>
+                                <td>
                             </tr>
                         @endforeach
                     </body>
